@@ -1,0 +1,38 @@
+{
+    "targets": [
+        {
+            'defines': [ ],
+            "target_name": "unity_finder",
+            'type': 'executable',
+            "sources": [ ],
+            'conditions': [
+                [
+                    'OS=="win"',
+                    {
+                        "sources": [
+                            "src/unity_finder_win/main.c"
+                        ],
+                        'link_settings': {
+                            'libraries': [
+                                'kernel32.lib', 'user32.lib', 'version.lib'
+                            ]
+                        }
+                    }
+                ],
+                [
+                    'OS=="mac"',
+                    {
+                        "sources": [
+                            "src/unity_finder_osx/unity_finder_osx/main.m"
+                        ],
+                        'link_settings': {
+                            'libraries': [
+                                '$(SDKROOT)/System/Library/Frameworks/Foundation.framework'
+                            ]
+                        }
+                    }
+                ]
+            ]
+        }
+    ]
+}

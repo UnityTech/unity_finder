@@ -1,0 +1,11 @@
+{
+  "name": "unity_finder",
+  "version": "1.0.0",
+  "description": "Find all Unity installations, and return the list in JSON format",
+  "main": "src/unity_finder.js",
+  "scripts": {
+      "test": "node src/test.js"
+  },
+  "author": "Unity Technologies",
+  "license": "MIT"
+}

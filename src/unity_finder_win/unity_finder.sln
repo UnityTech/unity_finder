@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unity_finder", "unity_finder.vcxproj", "{F97B98B4-D9AD-4D0F-B327-EF7ABA66EBBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F97B98B4-D9AD-4D0F-B327-EF7ABA66EBBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F97B98B4-D9AD-4D0F-B327-EF7ABA66EBBF}.Debug|Win32.Build.0 = Debug|Win32
+		{F97B98B4-D9AD-4D0F-B327-EF7ABA66EBBF}.Release|Win32.ActiveCfg = Release|Win32
+		{F97B98B4-D9AD-4D0F-B327-EF7ABA66EBBF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
