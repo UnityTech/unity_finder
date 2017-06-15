@@ -1,7 +1,7 @@
 "use strict";
 
 exports.find_unity_installs = function (callback) {
-    var exec = require ('child_process').exec;
+    var exec = require ('child_process').execFile;
     var result = '';
     var isWin = /^win/.test(process.platform);
     var cmd;
