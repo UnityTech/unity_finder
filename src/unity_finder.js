@@ -1,5 +1,7 @@
 "use strict";
 
+let debug = require('debug')('unity-finder');
+
 exports.find_unity_installs = function (callback) {
     var exec = require ('child_process').execFile;
     var result = '';
@@ -13,7 +15,11 @@ exports.find_unity_installs = function (callback) {
         cmd += '_osx';
     }
     var child = exec (cmd, function(err, stdout, stderr) {
-    	if (err) return callback(err);
+    	if (err) {
+    	    debug(`Error while executing ${cmd}`);
+    	    debug(`Error message: ${err}`);
+    	    return callback(err);
+      }
         result += stdout;
     });
     child.on('close', function (err) {
@@ -21,6 +27,7 @@ exports.find_unity_installs = function (callback) {
         return callback (null, result);
     });
     child.on('error', function (err) {
+        debug(error);
         return callback (err);
     });
 }
